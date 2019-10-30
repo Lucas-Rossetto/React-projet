@@ -3,6 +3,7 @@ import MessageList from './MessageList';
 import MessageBar from './MessageBar';
 import index from '../index.css';
 import { createStore } from 'redux'
+import { ADD_MESSAGE } from "../actions";
 
 export default class Chat extends React.Component {
 
