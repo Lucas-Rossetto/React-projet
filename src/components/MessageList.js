@@ -1,15 +1,16 @@
 import React, { Component }  from 'react';
 import MessageItem from './MessageItem';
+import MessageBar from './MessageBar';
 
 export default class MessageList extends Component {
 
     render() {
-        return (
-          <ul>
-            {this.props.items.map(item => (
-              <li key={item.id}>{item.text}</li>
-            ))}
-          </ul>
-        );
-      }
+           return (
+             <ul className="message-list">
+               {this.props.messages.map(message => (
+                <li key={message.id}>{message.text}</li>
+               ))}
+             </ul>
+           );
+    }
 }

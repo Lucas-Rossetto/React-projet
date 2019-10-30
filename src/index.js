@@ -5,6 +5,11 @@ import './index.css';
 import Chat from './components/Chat';
 import * as serviceWorker from './serviceWorker';
 
+/*const store = createStore(
+    reducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && 
+)*/
+
 ReactDOM.render(<Chat />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
