@@ -1,9 +1,10 @@
 import React from 'react';
 import MessageList from './MessageList';
 import MessageBar from './MessageBar';
-import index from '../index.css';
+//import index from '../index.css';
 import { createStore } from 'redux'
-import { ADD_MESSAGE } from "../actions";
+/*import { ADD_MESSAGE } from "../actions";*/
+import Login from "../login";
 
 export default class Chat extends React.Component {
 
@@ -24,6 +25,7 @@ export default class Chat extends React.Component {
         return (<div className="chat">
             <MessageList messages={this.state.messages}/>
             <MessageBar addMessage={this.addMessage}/>
+            <Login></Login>
         </div>)
     }
     

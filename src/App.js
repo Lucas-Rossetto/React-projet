@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -23,4 +23,20 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
+
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import reducers from './reducers'
+import Chat from './components/Chat'
+
+let store = createStore(reducers)
+
+  render(
+    <Provider store={store}>
+    <Chat />
+    </Provider>,
+    document.getElementById('app')
+)
