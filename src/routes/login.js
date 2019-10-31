@@ -41,6 +41,11 @@ function Log() {
         <p>Password</p>
   
         <input type="text"></input>
+
+        <br></br>
+
+        <button type="submit">Se connecter</button>
+
         </div>
     );
 }
