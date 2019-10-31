@@ -4,7 +4,7 @@ import MessageBar from './MessageBar';
 //import index from '../index.css';
 import { createStore } from 'redux'
 /*import { ADD_MESSAGE } from "../actions";*/
-import Login from "../login";
+import Login from "../routes/login";
 
 export default class Chat extends React.Component {
 
